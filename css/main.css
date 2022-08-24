@@ -1,0 +1,44 @@
+html {
+  --primary-color: #000;
+  --bg-color: #fff;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h2{
+  text-transform: uppercase;
+}
+
+.contacts {
+  height: 30%;
+  padding-bottom: 20px;
+}
+
+.contactsContent {
+  margin-left: 220px;
+}
+
+.krutoiChuvak {
+  float: left;
+  padding: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.cv {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.baseType {
+  font-weight: bold;
+}
+
+.baseValue {
+  padding-bottom: 20px;
+}
+
+
