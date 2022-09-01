@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--у тебя ru используется, из английского только <title />-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,11 +12,15 @@
 <body>
     <div class="cv">
         <div class="contacts">
+<!--            по хорошему размеры width/height пишут в html, чтобы браузер заранее выделил нужное место под картинку-->
             <img src="images/krutoiChuvak1.jpg" alt="krutoi chuvak" class="krutoiChuvak" />
 
             <div class="contactsContent">
                 <h1>Кирдюшкин Данила Владимирович</h1>
                 <h2>Контакты</h2>
+
+<!--                правильно будет использовать dl dt dd или табличное представление, div тоже ок, но здесь можно добавить семантики -->
+
                 <div class="baseType">
                     Email
                 </div>
@@ -27,6 +32,7 @@
                     Телефон
                 </div>
                 <div class="baseValue">
+<!--                    здесь также стоит через <a href="tel:-->
                     +79271888018
                 </div>
             </div>
