@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--у тебя ru используется, из английского только <title />-->
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,82 +10,93 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="cv">
-        <div class="contacts">
-<!--            по хорошему размеры width/height пишут в html, чтобы браузер заранее выделил нужное место под картинку-->
-            <img src="images/krutoiChuvak1.jpg" alt="krutoi chuvak" class="krutoiChuvak" />
+    <header class="cv">
+        <div class="cv__header cv__item_bold cv__item_size_x-large">Curriculum vitae</div>
+    </header>
 
-            <div class="contactsContent">
-                <h1>Кирдюшкин Данила Владимирович</h1>
-                <h2>Контакты</h2>
-
-<!--                правильно будет использовать dl dt dd или табличное представление, div тоже ок, но здесь можно добавить семантики -->
-
-                <div class="baseType">
-                    Email
-                </div>
-                <div class="baseValue">
-                    <a href="mailto:danila13rus@yandex.ru">danila13rus@yandex.ru</a>
-                </div>
-
-                <div class="baseType">
-                    Телефон
-                </div>
-                <div class="baseValue">
-<!--                    здесь также стоит через <a href="tel:-->
-                    +79271888018
-                </div>
+    <main>
+        <section class="contacts contacts__border">
+            <!--            по хорошему размеры width/height пишут в html, чтобы браузер заранее выделил нужное место под картинку-->
+            <div class="contacts__image">
+                <img src="images/krutoiChuvak1.jpg"  style="width: 200px; height: 200px" alt="krutoi chuvak" class="krutoiChuvak" />
             </div>
-        </div>
+
+            <div class="contacts__content">
+                <div class="contacts__name cv__item_size_x-large cv__item_bold">Кирдюшкин Данила Владимирович</div>
+                <div class="contacts__header cv__item_uppercase cv__item_size_large cv__item_bold">Контакты</div>
+<!--                    contacts__content_blue-->
+                <dl class="cv__content-item">
+                    <dt class="cv__item-key cv__item_size_large cv__item_bold">
+                        Email
+                    </dt>
+                    <dd class="cv__item-value">
+                        <a href="mailto:danila13rus@yandex.ru">danila13rus@yandex.ru</a>
+                    </dd>
+
+                    <dt class="cv__item-key cv__item_size_large cv__item_bold">
+                        Телефон
+                    </dt>
+                    <dd class="cv__item-value">
+                        <a href="tel:+79271888018">+7-927-188-80-18</a>
+                    </dd>
+                </dl>
+                <!--                правильно будет использовать dl dt dd или табличное представление, div тоже ок, но здесь можно добавить семантики -->
+                    <!--                    здесь также стоит через <a href="tel:-->
+            </div>
+        </section>
         <hr>
-        <div class="experience">
-            <div class="experienceContent">
-                <h2>Образование</h2>
-                <div class="baseType">
-                    Учеба
-                </div>
+        <section class="experience experience__border">
+            <div class="experience__content">
+                <div class="experience__header cv__item_uppercase cv__item_size_large cv__item_bold">Образование</div>
+                <dl class="cv__content-item">
+                    <dt class="cv__item-key cv__item_size_large cv__item_bold">
+                        Учеба
+                    </dt>
+                    <dd class="cv__item-value">
+                        ФМиИТ, ПМиИ 1 курс магистратуры
+                    </dd>
 
-                <div class="baseValue">
-                    ФМиИТ, ПМиИ 1 курс магистратуры
-                </div>
-
-                <div class="baseType">
-                    Работа
-                </div>
-
-                <div class="baseValue">
-                    Codemasters International, php разработчик ~ 1 год
-                </div>
+                    <dt class="cv__item-key cv__item_size_large cv__item_bold">
+                        Работа
+                    </dt>
+                    <dd class="cv__item-value">
+                        Codemasters International, php разработчик ~ 1 год
+                    </dd>
+                </dl>
             </div>
-        </div>
+        </section>
         <hr>
-        <div class="info">
-            <div class="infoContent">
-                <h2>Доп информация</h2>
-                <div class="baseType">
-                    Уровень английского
-                </div>
+        <section class="info info__border">
+            <div class="info__content">
+                <div class="info__header cv__item_uppercase cv__item_size_large cv__item_bold">Доп информация</div>
+                <dl class="cv__content-item">
+                    <dt class="cv__item-key cv__item_size_large cv__item_bold">
+                        Уровень английского
+                    </dt>
+                    <dd class="cv__item-value">
+                        B2
+                    </dd>
 
-                <div class="baseValue">
-                    B2
-                </div>
+                    <dt class="cv__item-key cv__item_size_large cv__item_bold">
+                        Цели посещения курсов
+                    </dt>
+                    <dd class="cv__item-value">
+                        Желание развиваться в IT сфере
+                    </dd>
 
-                <div class="baseType">
-                    Цели посещения курсов
-                </div>
-
-                <div class="baseValue">
-                    Желание развиваться в IT сфере
-                </div>
-
-                <div class="baseType">
-                    Откуда узнали про курс
-                </div>
-
-                <div class="baseValue">
-                    из чата)
-                </div>
+                    <dt class="cv__item-key cv__item_size_large cv__item_bold">
+                        Откуда узнали про курс
+                    </dt>
+                    <dd class="cv__item-value">
+                        из чата)
+                    </dd>
+                </dl>
             </div>
-        </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+
+    </footer>
 </body>
 </html>

@@ -1,48 +1,119 @@
 html {
   --primary-color: #000;
-  --bg-color: #fff;
+  --bg-color: #ffe5b4;
 }
 
 body {
   background-color: var(--bg-color);
-}
-
-h2{
-  text-transform: uppercase;
-}
-
-.contacts {
-  /*в вёрстке редко ограничивают высоту блоков, потому что текста в блоке может быть много больше, используют max/min-height*/
-  height: 30%;
-  padding-bottom: 20px;
-}
-
-/*классы пишут не в верблюжьей нотации (заглавные не используются), правильно будет .contacts-content или по БЭМ это .contacts__content*/
-.contactsContent {
-  margin-left: 220px;
-}
-
-/*картинка некорректных размеров 200x200 относительно исходника, надо использовать object-fit свойство чтобы правильно расстягивалась*/
-.krutoiChuvak {
-  /*сейчас уже перешли на grid/flex компоновки, float возможен в <article> когда позиционируют картинку относительно параграфов*/
-  float: left;
-  padding: 0;
-  width: 200px;
-  height: 200px;
-}
-
-.cv {
   max-width: 900px;
   margin: 0 auto;
   padding-top: 20px;
 }
 
-.baseType {
+.cv__item_bold{
   font-weight: bold;
 }
 
-.baseValue {
-  padding-bottom: 20px;
+.cv__item_size_x-large{
+  font-size: x-large;
+}
+
+.cv__item_size_large{
+  font-size: large;
+}
+
+.cv__header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cv__content-item{
+  font-style: italic;
+}
+
+.cv__item-key{
+  margin-top: 20px;
+}
+
+.contacts {
+  /*в вёрстке редко ограничивают высоту блоков, потому что текста в блоке может быть много больше, используют max/min-height*/
+  display: flex;
+}
+
+/*классы пишут не в верблюжьей нотации (заглавные не используются), правильно будет .contacts-content или по БЭМ это .contacts__content*/
+.contacts__content {
+  width: 75%;
+}
+
+.contacts__image {
+  width: 25%;
+}
+
+.contacts__name{
+  margin-bottom: 20px;
+}
+
+.contacts__name_bold{
+  font-weight: bold;
+}
+
+.contacts__header{
+  margin-bottom: 20px;
+}
+
+.experience__header{
+  margin-bottom: 20px;
+}
+
+.info__header{
+  margin-bottom: 20px;
+}
+
+.cv__item_uppercase{
+  text-transform: uppercase;
+}
+
+/*картинка некорректных размеров 200x200 относительно исходника, надо использовать object-fit свойство чтобы правильно расстягивалась*/
+.krutoiChuvak {
+  /*сейчас уже перешли на grid/flex компоновки, float возможен в <article> когда позиционируют картинку относительно параграфов*/
+  object-fit: cover;
+}
+
+.contacts__border{
+  border: 2px solid #ffd1f5;
+  border-bottom-width: 0;
+  padding: 5px;
+}
+
+.experience__border{
+  border: solid #ffb680;
+  border-width: 0 2px;
+  padding: 5px;
+}
+
+.info__border{
+  border: 2px solid #c3fffc;
+  border-top-width: 0;
+  padding: 5px;
+}
+
+dl {
+  padding: 0;
+  margin: 0
+}
+dt {
+  /* adjust the width; make sure the total of both is 100% */
+  padding: 0;
+  margin: 0
+}
+dd {
+  /* adjust the width; make sure the total of both is 100% */
+  padding: 0;
+  margin: 0
+}
+
+hr{
+  margin:5px 0;
 }
 
 
