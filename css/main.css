@@ -35,6 +35,11 @@ body {
   margin-top: 20px;
 }
 
+.experience__content{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 .contacts {
   /*в вёрстке редко ограничивают высоту блоков, потому что текста в блоке может быть много больше, используют max/min-height*/
   display: flex;
@@ -79,6 +84,10 @@ body {
   object-fit: cover;
 }
 
+.cv__content-image{
+  object-fit: contain ;
+}
+
 .contacts__border{
   border: 2px solid #ffd1f5;
   border-bottom-width: 0;
@@ -115,5 +124,3 @@ dd {
 hr{
   margin:5px 0;
 }
-
-
